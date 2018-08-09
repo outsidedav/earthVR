@@ -1,26 +1,17 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+//.............................................................................................................................................................
+//.DDDDDDDDDDD................................................................''''..................CCCCCCCC.............................ddddd.................
+//.DDDDDDDDDDDD...............................................................''''.................CCCCCCCCCC............................ddddd.................
+//.DDDDDDDDDDDDD..............................................................''''................CCCCCCCCCCCC...........................ddddd.................
+//.DDDDD...DDDDD.......aaaaaaa..... vvvv..vvvv ......ooooooo.......nnnnnnnnnn.''''..sssssss.......CCCCC..CCCCC.......ooooooo.........ddddddddd.......eeeeee....
+//.DDDDD...DDDDD.....aaaaaaaaaa.....vvvv..vvvv .....ooooooooo......nnnnnnnnnn.''''.sssssssss..... CCCC....CCCC......ooooooooo.......dddddddddd......eeeeeeee...
+//.DDDDD....DDDD.....aaaaaaaaaa.....vvvvvvvvvv.....ooooooooooo.....nnnnnnnnnnn'''''sssssssss..... CCCC............. oooooooooo..... dddddddddd..... eeeeeeeee..
+//.DDDDD....DDDD.....aaaa.aaaaa.....vvvvvvvvvv.....ooooo.ooooo.....nnnnn.nnnnn....'sssssssss..... CCCC............. oooo..oooo..... dddd.ddddd..... eee..eeee..
+//.DDDDD....DDDD......aaaaaaaaa......vvvvvvvv......oooo...oooo.....nnnnn.nnnnn....'ssssssss...... CCCC............. ooo...ooooo.... ddd..ddddd.... eeeeeeeee..
+//.DDDDD...DDDDD.....aaaaaaaaaa......vvvvvvvv......oooo...oooo.....nnnnn.nnnnn.....sssssssss..... CCCC....CCCC..... ooo...ooooo.... ddd..ddddd.... eeeeeeeee..
+//.DDDDD..DDDDDD.....aaaaa.aaaa......vvvvvvvv......oooo...oooo.....nnnnn.nnnnn....'ssssssssss.....CCCCC..CCCCC..... oooo..ooooo.... ddd..ddddd..... eee..eeee..
+//.DDDDDDDDDDDD......aaaaaaaaaa.......vvvvvv.......ooooooooooo.....nnnnn.nnnnn....'ssss.sssss.....CCCCCCCCCCCC..... oooooooooo..... dddddddddd..... eeeeeeeee..
+//.DDDDDDDDDDDD......aaaaaaaaaa.......vvvvvv........ooooooooo......nnnnn.nnnnn....'sssssssss.......CCCCCCCCCC.......oooooooooo..... dddddddddd..... eeeeeeeee..
+//.DDDDDDDDDDD.......aaaaaaaaaa........vvvv..........oooooooo......nnnnn.nnnnn.....sssssssss........CCCCCCCC.........oooooooo.......dddddddddd......eeeeeeee...
+//.....................aaa............................ooooo..........................sssss...........CCCCCC...........ooooo...........ddd.............eeee.....
+//.............................................................................................................................................................
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html file
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
