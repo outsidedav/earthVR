@@ -4,6 +4,7 @@
         <title>Global Meditation Tour</title>
         <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
         <script src="https://cdn.rawgit.com/archilogic-com/aframe-gblock/6498b71d/dist/gblock.js"></script>
+        <script src=https://cdn.aframe.io/fonts/Roboto-msdf.json></script>
     </head>
     <body>
         <a-scene>
@@ -14,29 +15,38 @@
                 </a-camera>
             </a-entity>
             <a-assets>
-                <!--<a-asset id="earth" src="https://poly.google.com/view/1I5ip-3VOfv"></a-asset>-->
+                    <img id="space" src="imgs/stars.jpg">
+                    <img id="africa" src="imgs/africa.jpg">
+                    <img id="america" src="imgs/lake.jpg">
+                    <img id="asia" src="imgs/asia.jpg">
+                    <sound id="meditate" src="http://marc.ucla.edu/mpeg/Body-Scan-Meditation.mp3"></sound>
             </a-assets>
+              <a-sound src="src:http://marc.ucla.edu/mpeg/Body-Scan-Meditation.mp3" autoplay="true" position="0 2 5"></a-sound>
+
+            <a-sky id="sky" src="#space"></a-sky>
             
-            <a-sky color="#000"></a-sky>
-                      <a-entity>
             
-          </a-entity>
-            <a-entity id="textBoxContainer">
-                
-            </a-entity>
            <a-entity id="earth">
             <a-entity  gblock="https://poly.google.com/view/1I5ip-3VOfv" position="0 0 0" scale=".05 .05 .05">
-                <a-animation attribute="rotation"
+                
+            </a-entity>
+           <a-sphere id="americaPin" position="6.814 29.169 11.688" radius=".5" color="red"></a-sphere>
+           <a-sphere id="africaPin" position="12.419 24.576 -10.373" radius=".5" color="red"></a-sphere>
+           <a-sphere id="asiaPin" position="2.583 30.358 -12.704" radius=".5" color="red"></a-sphere>
+            <a-animation attribute="rotation"
                   dur="50000"
                   fill="forwards"
                   to="0 360 0"
                   repeat="indefinite"
                   easing="linear">
                 </a-animation>
-            </a-entity>
          </a-entity>
-            <a-sphere id="testSphere" position="0 -30 0" radius="10"></a-sphere>
-        </a-scene>
+         <a-entity>
+             <a-entity id="textContainer"></a-entity>
+             <a-entity id="textBoxContainer"></a-entity>
+             <a-animation attribute="scale" begin="0" from="0 0 0" to="1 1 1"></a-animation>
+         </a-entity>
+         </a-scene>
         <script src="js/script.js"></script>
     </body>
 </html> 
