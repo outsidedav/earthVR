@@ -11,6 +11,11 @@
             <a-entity id="cameraWrapper" position="0 15 40">
                 <a-camera> 
                     <a-cursor>  
+                        <a-entity cursor="fuse: true; fuseTimeout: 500"
+                        position="0 0 -1"
+                        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                        material="color: black; shader: flat">
+                      </a-entity>
                     </a-cursor>
                 </a-camera>
             </a-entity>
@@ -25,22 +30,44 @@
 
             <a-sky id="sky" src="#space"></a-sky>
             
-            
+        
            <a-entity id="earth">
             <a-entity  gblock="https://poly.google.com/view/1I5ip-3VOfv" position="0 0 0" scale=".05 .05 .05">
                 
             </a-entity>
-           <a-sphere id="americaPin" position="6.814 29.169 11.688" radius=".5" color="red"></a-sphere>
-           <a-sphere id="africaPin" position="12.419 24.576 -10.373" radius=".5" color="red"></a-sphere>
-           <a-sphere id="asiaPin" position="2.583 30.358 -12.704" radius=".5" color="red"></a-sphere>
+           <a-sphere id="americaPin" position="7.137 28.651 12.648" radius=".6" color="red"></a-sphere>
+           <a-sphere id="africaPin" position="13.059 24.226 -10.837" radius=".6" color="red"></a-sphere>
+           <a-sphere id="asiaPin" position="-12.492 22.041 -11.280" radius=".6" color="red"></a-sphere>
+           <a-sphere id="hawaiiPin" position="-8.016 16.974 14.300" radius=".6" color="red"></a-sphere>
+           <a-sphere id="australiaPin" position="-13.674 8.411 -0.444" radius=".6" color="red"></a-sphere>
             <a-animation attribute="rotation"
-                  dur="50000"
+                  dur="80000"
                   fill="forwards"
                   to="0 360 0"
                   repeat="indefinite"
                   easing="linear">
                 </a-animation>
          </a-entity>
+         <a-entity position="0 0 0">
+         <a-sphere id="spaceStationPin" geometry="radius: 0.84; primitive: tetrahedron" position="30 18 0" color="red">
+             <a-animation attribute="rotation"
+                  dur="5000"
+                  fill="forwards"
+                  to="0 360 0"
+                  repeat="indefinite"
+                  easing="linear">
+                </a-animation>
+                </a-sphere>
+             <a-entity id="spaceStation" gblock="https://poly.google.com/view/d3Fq5H6ne8E" position="30 15 0" scale=".1 .1 .1" rotation="0 0 -80" ></a-entity>
+           <a-animation attribute="rotation"
+                  dur="20000"
+                  fill="forwards"
+                  to="0 360 0"
+                  repeat="indefinite"
+                  easing="linear">
+                </a-animation>
+          </a-entity> 
+          
          <a-entity>
              <a-entity id="textContainer"></a-entity>
              <a-entity id="textBoxContainer"></a-entity>
