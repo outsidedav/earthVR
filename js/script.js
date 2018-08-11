@@ -37,12 +37,12 @@ var z = 19;
 
 // exitBox Position
 var xx = 0;
-var yy = -5;
+var yy = 0;
 var zz = 19;
 
 var scale = 10;
 
-var country = "space";
+var country = "stars";
 
 // Country functions
 function myAmericaClicked(){
@@ -100,23 +100,25 @@ function myTextBoxClicked(){
     console.log("textBoxContainer Clicked");
     myExitBoxOpen();
     changeSky(country);
-    hideEarth();
+    showEarth("false");
+    showYogi("true");
 }
 
 // function for Exit Box
 function myExitBoxClicked(){
     console.log("Exit Box Clicked");
-    changeSky("space");
+    changeSky("stars");
     console.log("changeSky = space");
     myExitBoxContainer.innerHTML = ` `
     console.log("myExitBoxContainer.innerHTML = null");
-    
+    showEarth("true");
+    showYogi("false");
 }
 
 
 // Methods
 function exitClicked(){
-    myTextBoxOpen();
+    myExitBoxClicked();
 }
 
 function changeSky(e){
@@ -126,4 +128,34 @@ function changeSky(e){
     
     mySky.setAttribute("src", `#${e}`);
     console.log(mySky);
+}
+
+function showEarth(e){
+    const myEarthContrainer = document.querySelector("#earth");
+    const mySpaceStationContrainer = document.querySelector("#spaceStationContainer");
+    
+    if(e == "false"){
+    myEarthContrainer.setAttribute("visible", "false");
+    mySpaceStationContrainer.setAttribute("visible", "false");
+    }
+    
+    if(e == "true"){
+    myEarthContrainer.setAttribute("visible", "true");
+    mySpaceStationContrainer.setAttribute("visible", "true");
+    }
+    
+}
+
+function showYogi(e){
+    
+    const myYogiContainer = document.querySelector("#yogiContainer");
+    
+    
+     if(e == "false"){
+    myYogiContainer.innerHTML = ` ` 
+     }
+     
+     if(e == "true"){
+    myYogiContainer.innerHTML = `<a-entity  gblock="https://poly.google.com/view/eZMcxLOjZK_" rotation="0 0 0" position="0 -5 -30" scale="5 5 5">` 
+     }
 }

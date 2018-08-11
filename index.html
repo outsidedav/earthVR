@@ -20,7 +20,8 @@
                 </a-camera>
             </a-entity>
             <a-assets>
-                    <img id="space" src="imgs/stars.jpg">
+                    <img id="stars" src="imgs/stars.jpg">
+                    <img id="space" src="imgs/spaceStation.jpg">
                     <img id="Africa" src="imgs/africa.jpg">
                     <img id="America" src="imgs/lake.jpg">
                     <img id="Asia" src="imgs/asia.jpg">
@@ -29,7 +30,7 @@
             </a-assets>
               <a-sound src="src:http://marc.ucla.edu/mpeg/Body-Scan-Meditation.mp3" autoplay="true" position="0 2 5"></a-sound>
 
-            <a-sky id="sky" src="#space"></a-sky>
+            <a-sky id="sky" src="#stars"></a-sky>
             
         
            <a-entity id="earth">
@@ -49,7 +50,10 @@
                   easing="linear">
                 </a-animation>
          </a-entity>
-         <a-entity position="0 0 0">
+         <a-entity id="yogiContainer">
+             
+         </a-entity>
+         <a-entity id="spaceStationContainer" position="0 0 0">
          <a-sphere id="spaceStationPin" geometry="radius: 0.84; primitive: tetrahedron" position="30 18 0" color="red">
              <a-animation attribute="rotation"
                   dur="5000"
